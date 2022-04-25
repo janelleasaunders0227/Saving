@@ -1,6 +1,7 @@
 # Import necessary python libraries
 import requests
 import time
+import os
 import mimetypes
 mimetypes.init()
 
@@ -21,6 +22,17 @@ file_location = '/path/to/file'
 
 # Specify the API URL
 upload_url = f'{api_base_url}/queues/{queue_id}/uploads'
+
+#Upload option in Python
+fileitem = form['filename']
+ 
+# check if the file has been uploaded
+if fileitem.filename:
+    # strip the leading path from the file name
+    fn = os.path.basename(fileitem.filename)
+     
+   # open read and write the file into the server
+    open(fn, 'wb').write(fileitem.file.read())
 
 # Prepare file for upload
 file = open(file_location, 'rb')

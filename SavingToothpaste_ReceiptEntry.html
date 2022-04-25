@@ -41,14 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 </header>
 
 <div class="w3-content" style="max-width:1100px">
-
+<!---
   <form action="/action_page.php">
     <center><label for="img">Upload Receipt:</label>
     <br>
     <input type="file" id="img" name="img" accept="image/*">
     <br>
     <input type="submit"></center>
-  </form>
+  </form>--> 
 
 <!--</html>
 <form action="/action_page.php">
@@ -82,3 +82,79 @@ h1, h2, h3, h4, h5, h6 {
 		</div>
 	</div>
 </div>-->
+
+
+<center><form action="insert.php" method="POST">
+  <label for="storename">Store Name:</label><br>
+  <input type="text" id="storename" name="storename" required><br>
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city"><br>
+  <label for="date">Date:</label><br>
+  <input type="date" id="date" name="date" required><br>
+  <label for="time">Time:</label><br>
+  <input type="time" id="time" name="time"><br>
+  <label for="total">Total (Pre-Tax):</label><br>
+  <input type="number" id="total" name="total" required><br>
+  <label for="tax">Total Tax:</label><br>
+  <input type="number" id="tax" name="tax"><br>
+  <label for="item1">Item 1:</label><br>
+  <input type="text" id="item1" name="item1" required><br>
+  <label for="item1cost">Item 1 Cost:</label><br>
+  <input type="number" step="any" id="item1cost" name="item1cost" required><br>
+  <label for="item1category">Choose an item 1 Category:</label>
+  <select id="item1category" name="item1category" required>
+    <option value="bath">Bathroom</option>
+    <option value="kitch">Kitchen</option>
+    <option value="bed">Bedroom</option>
+    <option value="car">Vehicle</option>
+  </select><br>
+
+  <label for="item2">Item 2:</label><br>
+  <input type="text" id="item2" name="item2"><br>
+  <label for="item2cost">Item 2 Cost:</label><br>
+  <input type="number" step="any" id="item2cost" name="item2cost"><br>
+  <label for="item2category">Choose an item 2 Category:</label>
+  <select id="item2category" name="item2category">
+    <option value="bath">Bathroom</option>
+    <option value="kitch">Kitchen</option>
+    <option value="bed">Bedroom</option>
+    <option value="car">Vehicle</option>
+  </select><br>
+
+  <label for="item3">Item 3:</label><br>
+  <input type="text" id="item3" name="item3"><br>
+  <label for="item3cost">Item 3 Cost:</label><br>
+  <input type="number" step="any" id="item3cost" name="item3cost"><br>
+  <label for="item3category">Choose an item 3 Category:</label>
+  <select id="item3category" name="item3category">
+    <option value="bath">Bathroom</option>
+    <option value="kitch">Kitchen</option>
+    <option value="bed">Bedroom</option>
+    <option value="car">Vehicle</option>
+  </select><br>
+
+  <label for="item4">Item 4:</label><br>
+  <input type="text" id="item4" name="item4"><br>
+  <label for="item4cost">Item 4 Cost:</label><br>
+  <input type="number" step="any" id="item4cost" name="item4cost"><br>
+  <label for="item4category">Choose an item 4 Category:</label>
+  <select id="item4category" name="item4category">
+    <option value="bath">Bathroom</option>
+    <option value="kitch">Kitchen</option>
+    <option value="bed">Bedroom</option>
+    <option value="car">Vehicle</option>
+  </select><br>
+
+  <label for="item5">Item 5:</label><br>
+  <input type="text" id="item5" name="item5"><br>
+  <label for="item5cost">Item 5 Cost:</label><br>
+  <input type="number" step="any" id="item5cost" name="item5cost"><br>
+  <label for="item5category">Choose an item 5 Category:</label>
+  <select id="item5category" name="item5category">
+    <option value="bath">Bathroom</option>
+    <option value="kitch">Kitchen</option>
+    <option value="bed">Bedroom</option>
+    <option value="car">Vehicle</option>
+  </select><br>
+  <td><input type="submit" value="Submit"></td>
+</form></center>
